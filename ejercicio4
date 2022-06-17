@@ -1,0 +1,38 @@
+envio=1500
+
+cajas=int(input("Número de cajas a vender:"))
+id=int(input("ID del producto:"))
+
+producto1=[1, "Maíz grano", 285.55]
+producto2=[2, "Pepino", 334.72]
+producto3=[3, "Tomate verde", 129.00]
+
+if id == 1:
+    print("El producto es:", producto1[1])
+    print("El costo por caja es: $", producto1[2])
+    total=producto1[2]*cajas
+    if cajas <100:
+        t_mas_envio=total+envio
+        print("El costo total a pagar es: $", t_mas_envio)
+    else:
+         print("El costo total a pagar es: $", total)
+
+if id == 2:
+    print("El producto es:", producto2[1])
+    print("El costo por caja es: $", producto2[2])
+    total=producto2[2]*cajas
+    if cajas <100:
+        t_mas_envio=total+envio
+        print("El costo total a pagar es: $", t_mas_envio)
+    else:
+         print("El costo total a pagar es: $", total)
+
+if id == 3:
+    print("El producto es:", producto3[1])
+    print("El costo por caja es: $", producto3[2])
+    total=producto3[2]*cajas
+    if cajas <100:
+        t_mas_envio=total+envio
+        print("El costo total a pagar es: $", t_mas_envio)
+    else:
+         print("El costo total a pagar es: $", total)
