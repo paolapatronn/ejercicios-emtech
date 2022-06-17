@@ -1,0 +1,17 @@
+cap_camion=3254
+med_camion=1627
+
+cemento=40
+yeso=30
+
+c_cemento=int(input("Número de costales de cemento: "))
+c_yeso=int(input("Número de costales de yeso: "))
+
+tot_cemento=c_cemento*40
+tot_yeso=c_yeso*30
+
+tot_carga=tot_cemento + tot_yeso
+
+print("El peso total en kg es:", tot_carga)
+
+print("¿Se puede realizar el envío?", tot_carga>=med_camion and tot_carga<=cap_camion )
