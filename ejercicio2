@@ -1,0 +1,17 @@
+nombre1=input("Primer municipio: ")
+cantidad1=int(input("Número de habitantes: "))
+municipio1=[nombre1, cantidad1]
+
+nombre2=input("Segundo municipio: ")
+cantidad2=int(input("Número de habitantes: "))
+municipio2=[nombre2, cantidad2]
+
+nombre3=input("Tercer municipio: ")
+cantidad3=int(input("Número de habitantes: "))
+municipio3=[nombre3, cantidad3]
+
+total_habitantes=cantidad1+cantidad2+cantidad3
+print("El total de habitantes es: ", total_habitantes)
+
+prom_habitantes=(float(cantidad1) + float(cantidad2) + float(cantidad3))/3
+print("El promedio de habitantes es:", prom_habitantes)
