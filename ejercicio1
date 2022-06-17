@@ -1,0 +1,18 @@
+superficie=57365
+clima1="Cálido"
+clima2="Subhúmedo"
+clima3="Seco"
+clima4="Semiseco"
+temp_me_anual=25.45
+prc_prom_anual=790.1
+pobl_mujeres=153128
+pobl_hombres=1494815
+porc_cul=33.15
+porc_maz=16.57
+
+total_hom_muj= pobl_hombres + pobl_mujeres
+print("La población total entre hombres y mujeres es de", total_hom_muj)
+porc_cul_maz=porc_cul + porc_maz
+print("El porcentaje total de la población entre Culiacán y Mazatlán es de", porc_cul_maz, "%")
+print("La temperatura media anual en Sinaloa es de", temp_me_anual, "grados centigrados")
+print("Los tipos de clima son:", clima1, ",", clima2, ",", clima3, "y", clima4)
