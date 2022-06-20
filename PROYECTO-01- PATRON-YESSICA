@@ -1,0 +1,39 @@
+#Se definen los datos de usuario y contraseña.
+usuario="emtech"
+contrasena="caso1"
+
+#Se declara una variable boolean que se volverá verdadera siempre y cuando los datos de usuario y contraseña sean correctos.
+acesso=False
+
+#Se ejecuta un ciclo donde el usuario igresa datos que deben validarse con los que vimos al principio.
+while True:
+   us=input("Usuario:")
+   con=input("Contraseña:")
+
+#Si el usuario y contraseña son correctos se autoriza el acceso y se termina el ciclo While.
+   if us==usuario and con==contrasena:
+      acceso=True
+      break
+
+#De tener errores se le permitirá al usuario seguirlo itentando las veces que sean necesarias.   
+   else:
+      print("Usuario ó contraseña incorrectos, intenta nuevamente.")
+      
+#Una vez permitido el acceso, el usuario podrá consultar los datos del reporte.
+if acceso:
+    print()
+    print("Reporte:")
+    print()
+
+#Ciclo for que itera sobre la lista "lifestore_products" y rescata el ID y el nombre del producto.    
+for elemento in lifestore_products:
+    idproducto=elemento[0]
+    nombreproducto=elemento[1]
+
+#Ciclo for que itera sobre la lista "lifestore_sales" y regresa la referencia al ID del producto, dandonos la oportunidad de llevar un conteo sobre las repeticiones de este.
+for dato in lifestore_sales:
+    fkproducto=dato[1]
+
+lista=[]
+lista.append([idproducto, fkproducto, nombreproducto])
+print(lista)
